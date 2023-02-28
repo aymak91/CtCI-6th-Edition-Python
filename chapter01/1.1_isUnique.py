@@ -23,3 +23,7 @@ def isUnique(s):
         last_char = char
 
     return True
+
+
+# Similar problem:
+# https://leetcode.com/problems/contains-duplicate/
