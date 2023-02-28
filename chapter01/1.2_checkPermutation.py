@@ -5,7 +5,7 @@ from collections import defaultdict
 def isPermutation(s1, s2):
     if len(s1) != len(s2): return False
 
-    hash = defaultdict(0)
+    hash = defaultdict(int)
 
     for char in s1:
         hash[char] += 1
@@ -15,3 +15,8 @@ def isPermutation(s1, s2):
         hash[char] -= 1
 
     return True
+
+# O(n) where n is the length of the string
+
+# Similar problem:
+# https://leetcode.com/problems/valid-anagram/description/
